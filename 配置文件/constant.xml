@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+          "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<!-- 0，修改接收参数和页面编码 (默认为:UTF-8, 所以这项可以不用设置) -->
+	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+
+	<!-- 1，修改struts的默认访问后缀 struts.action.extension=action,, -->
+	<constant name="struts.action.extension" value="action,do,"></constant>
+
+	<!-- 2，当struts配置文件修改时是否自动重新加载该文件，开发条件下开启，生产阶段关闭 struts.configuration.xml.reload=false 
+		默认关闭 -->
+	<constant name="struts.configuration.xml.reload" value="true"></constant>
+
+	<!-- 3，设置浏览器是否自动缓存静态内容，生产模式开启，开发模式关闭 struts.serve.static.browserCache=false -->
+	<constant name="struts.serve.static.browserCache" value="false"></constant>
+
+	<!-- 4，设置上传文件大小限制 struts.multipart.maxSize=2097152 -->
+	<constant name="struts.multipart.maxSize" value="100000000"></constant>
+
+</struts>
